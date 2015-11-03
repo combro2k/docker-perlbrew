@@ -21,7 +21,7 @@ pre_install() {
 }
 
 install_perlbrew(){
-    cpanm App::perlbrew || return 1
+    cpanm -nq App::perlbrew || return 1
 
     return 0
 }
